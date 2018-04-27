@@ -18,10 +18,9 @@ function createCheckerBoard(numberOfTiles) {
         tile = makeTile(color)
         document.body.appendChild(tile);
       } else {
-        if(j%2===0){
-        color = "red";
-        tile = makeTile(color)
-        document.body.appendChild(tile);
+          color = "red";
+          tile = makeTile(color)
+          document.body.appendChild(tile);
       }  //closes else statement
   }      //closes for loop
 }        //closes createCheckerBoard function
