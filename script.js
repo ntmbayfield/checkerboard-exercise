@@ -26,3 +26,28 @@ function createCheckerBoard(numberOfTiles) {
 }        //closes createCheckerBoard function
 
 createCheckerBoard(81);
+
+//TO CREATE A CHECKERBOARD OF n x n SQUARES
+// function addElement (n)  {
+//
+//   for (var i = 0; i < n; i++) {
+//     for (var j = 0; j < n; j++) {
+//       if ((i+j)%2 === 0) {
+//         var check = document.createElement('div');
+//         document.body.appendChild(check);
+//         check.style.width = 100/n + '%';
+//         check.style.backgroundColor = '#000000';
+//         check.style.paddingBottom = 100/n + '%';
+//         check.style.float = 'left';
+//       } else {
+//         var check = document.createElement('div');
+//         document.body.appendChild(check);
+//         check.style.width = 100/n + '%';
+//         check.style.backgroundColor = 'red';
+//         check.style.paddingBottom = 100/n + '%';
+//         check.style.float = 'left';
+//         }
+//       }
+//     }
+//   }
+// addElement(9)
