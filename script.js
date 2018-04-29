@@ -1,29 +1,12 @@
+function randomBoard (grid) {
+  for (var i = 0; i < grid*grid; i++) {
+      var check = document.createElement('div');
+      check.style.backgroundColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+      check.style.width = 100/grid +'%';
+      check.style.paddingBottom = 100/grid + '%';
+      check.style.float = 'left';
+      document.body.appendChild(check);
+    }
+  }
 
-
-function makeTile(color) {
-  var tile = document.createElement("div");
-  tile.style.width = "11.1%";
-  tile.style.paddingBottom = "11.1%";
-  tile.style.float = "left";
-  tile.style.background = color;
-  return tile;
-}
-
-function createCheckerBoard(numberOfTiles) {
-  var tile=null;
-
-  for(var i=0;i<numberOfTiles;i++){
-      if (i%2===0){
-        color = "black";
-        tile = makeTile(color)
-        document.body.appendChild(tile);
-      } else {
-        if(j%2===0){
-        color = "red";
-        tile = makeTile(color)
-        document.body.appendChild(tile);
-      }  //closes else statement
-  }      //closes for loop
-}        //closes createCheckerBoard function
-
-createCheckerBoard(81);
+randomBoard(9);
