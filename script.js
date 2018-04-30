@@ -33,24 +33,22 @@
 
    for (var i = 0; i < n; i++) {  //specifies how many rows
      for (var j = 0; j < n; j++) { //specifies how many columns
-         for (var alpha = 0.1; j < n; alpha=alpha+ 0.09);
        if ((i+j)%2 === 0) {
          var check = document.createElement('div');
          document.body.appendChild(check);
          check.style.width = 100/n + '%';
-           check.style.backgroundColor = rgba (0, 0, 0, alpha);
-         //check.style.backgroundColor = '#000000';
+         check.style.backgroundColor = '#000000';
          check.style.paddingBottom = 100/n + '%';
          check.style.float = 'left';
        } else {
          var check = document.createElement('div');
          document.body.appendChild(check);
          check.style.width = 100/n + '%';
-         check.style.backgroundColor = rgba(255, 0, 0, alpha);
+         check.style.backgroundColor '#ff0000';
          check.style.paddingBottom = 100/n + '%';
          check.style.float = 'left';
          }
        }
      }
    }
- addElement(9)
+ addElement(9);
