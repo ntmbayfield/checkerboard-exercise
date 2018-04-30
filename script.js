@@ -41,10 +41,10 @@
          check.style.paddingBottom = 100/n + '%';
          check.style.float = 'left';
        } else {
-         var check = document.createElement('div');
+         check = document.createElement('div');
          document.body.appendChild(check);
          check.style.width = 100/n + '%';
-         check.style.backgroundColor '#ff0000';
+         check.style.backgroundColor = '#ff0000';
          check.style.paddingBottom = 100/n + '%';
          check.style.float = 'left';
          }
